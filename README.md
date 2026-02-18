@@ -1,16 +1,25 @@
-# React + Vite
+# The Moden - Surah Al-Bakara Learning App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Build Status](https://github.com/USER_NAME/REPO_NAME/actions/workflows/build-apk.yml/badge.svg)
 
-Currently, two official plugins are available:
+**The Moden** is a comprehensive React-based application designed to help users learn, memorize, and understand Surah Al-Bakara. It features a full Quran reader, audio playback, AI-powered teacher, and progress tracking.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+*   **Full Surah Al-Bakara**: Read and listen to all 286 verses.
+*   **AI Teacher**: Chat with a knowledgeable AI assistant powered by Gemini 2.0 Flash Lite.
+*   **Audio**: Streamed high-quality recitation from Mishary Al-Afasy.
+*   **Quizzes**: Test your knowledge and memorization.
+*   **Progress Tracking**: Monitor your daily learning streak.
 
-## React Compiler
+## Mobile Export (Android)
+This project is configured for **Automatic Cloud Building** via GitHub Actions.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1.  Push this code to GitHub.
+2.  Go to the **Actions** tab in your repository.
+3.  Download the `TheModen-APK` artifact from the latest successful build.
 
-## Expanding the ESLint configuration
+## Local Development
+1.  Install dependencies: `npm install`
+2.  Start dev server: `npm run dev`
+3.  Build for web: `npm run build`
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
