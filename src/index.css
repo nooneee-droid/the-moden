@@ -1,0 +1,58 @@
+:root {
+  /* Color Palette */
+  --bg-primary: #F5F5F5;
+  --bg-card: #FFFFFF;
+  --accent-primary: #CCFF00; /* Lime Green */
+  --accent-secondary: #000000; /* Black */
+  --text-primary: #1A1A1A;
+  --text-secondary: #666666;
+  --border-color: #E0E0E0;
+  --success-color: #CCFF00;
+  --highlight-color: #FFD700;
+
+  /* Typography */
+  --font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  
+  /* Spacing */
+  --spacing-xs: 8px;
+  --spacing-sm: 16px;
+  --spacing-md: 24px;
+  --spacing-lg: 32px;
+
+  /* UI */
+  --radius-card: 16px;
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Utilities */
+.container {
+  max-width: 600px; /* Mobile first constraint */
+  margin: 0 auto;
+  min-height: 100vh;
+  background-color: var(--bg-primary);
+  padding-bottom: 80px; /* Space for bottom nav */
+}

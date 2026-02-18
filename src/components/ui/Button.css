@@ -1,0 +1,43 @@
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 24px;
+    border-radius: 12px;
+    /* Slightly less rounded than cards */
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    width: 100%;
+    /* Default to full width for mobile ease */
+}
+
+.btn-primary {
+    background-color: var(--accent-primary);
+    color: var(--text-primary);
+}
+
+.btn-primary:hover {
+    background-color: #b3e600;
+    /* Darker lime */
+    transform: scale(1.02);
+}
+
+.btn-secondary {
+    background-color: var(--accent-secondary);
+    color: #FFFFFF;
+}
+
+.btn-secondary:hover {
+    background-color: #333333;
+}
+
+.btn-ghost {
+    background-color: transparent;
+    color: var(--text-primary);
+}
+
+.btn-ghost:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}

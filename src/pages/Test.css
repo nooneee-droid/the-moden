@@ -1,0 +1,232 @@
+.test-page {
+    padding: 20px;
+    min-height: 100vh;
+    background-color: var(--bg-primary);
+}
+
+.page-header {
+    margin-bottom: 24px;
+}
+
+.filter-tabs {
+    display: flex;
+    gap: 16px;
+    margin-top: 16px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.filter-tab {
+    background: none;
+    border: none;
+    padding: 8px 16px;
+    font-weight: 600;
+    color: var(--text-secondary);
+    border-bottom: 2px solid transparent;
+}
+
+.filter-tab.active {
+    color: var(--text-primary);
+    border-bottom-color: var(--accent-primary);
+}
+
+/* Quiz List */
+.quiz-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.quiz-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.quiz-card.locked {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.quiz-info h3 {
+    font-size: 16px;
+    margin: 4px 0;
+}
+
+.quiz-meta {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    font-size: 12px;
+    color: var(--text-secondary);
+}
+
+.duration {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.start-btn {
+    width: auto;
+    padding: 8px 16px;
+    font-size: 14px;
+}
+
+/* Quiz Interface */
+.quiz-interface {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 40px);
+}
+
+.quiz-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.timer {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-weight: bold;
+    color: #E65100;
+}
+
+.progress-bar-container {
+    height: 6px;
+    background-color: #E0E0E0;
+    border-radius: 3px;
+    margin-bottom: 32px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background-color: var(--success-color);
+    transition: width 0.3s ease;
+}
+
+.question-area h2 {
+    font-size: 20px;
+    margin-bottom: 32px;
+}
+
+.q-number {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+    display: block;
+}
+
+.options-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.option-btn {
+    background-color: var(--bg-card);
+    padding: 16px;
+    border-radius: 12px;
+    border: 2px solid transparent;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-align: left;
+    font-size: 16px;
+    transition: all 0.2s;
+}
+
+.option-btn:hover {
+    background-color: #f0f0f0;
+}
+
+.option-btn.selected {
+    border-color: var(--accent-primary);
+    background-color: rgba(204, 255, 0, 0.1);
+}
+
+.option-marker {
+    width: 24px;
+    height: 24px;
+    background-color: #E0E0E0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.option-btn.selected .option-marker {
+    background-color: var(--accent-primary);
+    color: var(--text-primary);
+}
+
+.quiz-footer {
+    margin-top: auto;
+    padding-top: 20px;
+}
+
+/* Result Interface */
+.result-interface {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.result-card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.award-icon {
+    color: #FFD700;
+    margin-bottom: 16px;
+}
+
+.score-ring {
+    margin: 24px 0;
+}
+
+.score-label {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.result-stats {
+    display: flex;
+    gap: 40px;
+    margin-top: 24px;
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+}
+
+.stat .val {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.stat .lbl {
+    font-size: 12px;
+    color: var(--text-secondary);
+}
+
+.result-actions {
+    display: flex;
+    width: 100%;
+    gap: 16px;
+}
