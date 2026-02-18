@@ -27,7 +27,7 @@ dist-ssr
 capacitor.config.json.timestamp
 
 # Android
-android/
+# # android/
 !android/app/
 !android/build.gradle
 !android/gradle.properties
